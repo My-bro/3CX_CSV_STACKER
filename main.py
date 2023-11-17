@@ -16,6 +16,8 @@ from src.open_folder_dialog import open_folder_dialog
 from src.collect_entry import collect_entry
 from src.set_up_windows import set_up_windows
 
+
+
 root = ThemedTk(theme="arc")
 set_up_windows(root)
 
