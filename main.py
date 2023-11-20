@@ -11,7 +11,7 @@ from src.setup_function.base_function import Base_function
 from src.setup_function.add_function import Add_function
 from src.setup_function.set_up_windows import set_up_windows
 from src.states_function.folder_states import folder_states
-from src.open_folder_dialog import open_folder_dialog
+from src.file_function.open_folder_dialog import open_folder_dialog
 
 root = CTk()
 set_up_windows(root)
@@ -20,8 +20,8 @@ Base_path = tk.StringVar(value="")
 Add_path = tk.StringVar(value="")
 Path = tk.StringVar(value="")
 
-Base_bool = Base_function(root, Base_path)
-Add_bool = Add_function(root, Add_path)
+Base_bool = Base_function(root, Base_path) ## Set up Base element
+Add_bool = Add_function(root, Add_path) ## Set up Add element
 folder_bool = tk.BooleanVar(value=False)
 
 Folder_label = CTkLabel(root, text="Select where is gonna be put", font=("Arial", 20, "bold"), pady=10)
@@ -29,6 +29,6 @@ Folder_button = CTkButton(root, text="Choose", font=("Arial", 20, "bold"), comma
 Folder_bool = tk.BooleanVar(value=False)
 Folder_path = tk.StringVar(value="")
 
-folder_states(root, Base_bool, Add_bool,Folder_label, Folder_button, Folder_bool)
+folder_states(root, Base_bool, Add_bool,Folder_label, Folder_button, Folder_bool) # if a file was selected on add and base it will display button folder
 
 root.mainloop()

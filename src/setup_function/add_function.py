@@ -7,7 +7,7 @@
 
 import tkinter as tk
 from tkinter import filedialog
-from src.file_handling import file_handling
+from src.file_function.file_handling import file_handling
 from customtkinter import *
 
 def Add_function(root, Add_path):

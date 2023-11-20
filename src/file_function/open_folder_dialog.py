@@ -6,7 +6,7 @@
 ##
 
 from tkinter import filedialog
-from src.concatenation import concatenation
+from src.file_function.concatenation import concatenation
 
 def save_file_dialog():
     options = {

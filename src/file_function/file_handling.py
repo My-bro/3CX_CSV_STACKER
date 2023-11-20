@@ -5,7 +5,7 @@
 ## File_handling
 ##
 
-from src.open_file_dialog import open_file_dialog
+from src.file_function.open_file_dialog import open_file_dialog
 from customtkinter import *
 
 def file_handling(button, var, path):
