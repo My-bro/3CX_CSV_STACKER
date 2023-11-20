@@ -6,12 +6,13 @@
 ##
 
 from src.open_file_dialog import open_file_dialog
+from customtkinter import *
 
 def file_handling(button, var, path):
     selected_file_path = open_file_dialog()
     if selected_file_path:
         print("Selected file:", selected_file_path)
-        button.config(text="selected_file")
+        button.configure(text="selected file")
         var.set(True)
         path.set(selected_file_path)
         print("the path", path.get())
